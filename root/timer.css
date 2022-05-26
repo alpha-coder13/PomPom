@@ -1,0 +1,230 @@
+body{
+    margin: 0%;
+}
+div#layeruno{
+    position: absolute;
+    z-index:1;
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    width:100vw ;
+    flex-direction: column;
+    background: linear-gradient(white,rgb(212, 105, 105));
+}
+div#layeruno div#top{
+    position: relative;
+    height: auto;
+    width: 96.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 4vh;
+    font-weight: bolder;
+    color:  black;
+    overflow-x: hidden;
+    font-family: "Audiowide", sans-serif;
+
+}
+div#layeruno div#two{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#layeruno div#two div#controller{
+    display: flex;
+    flex-direction:row ;
+    height: auto;
+    width: auto;
+}
+div#layeruno div#two div#controller div#settings-box{
+    margin-left:2vh ;
+}
+
+div#layeruno div#two div#controller div#settings-box td#settings-box-td{
+    background-color: rgb(0, 0, 0,0.14);
+    padding: 1.25vh;
+    border-bottom: 2px solid rgb(0, 0, 0,0.56);
+}
+
+div#layeruno div#two div#controller div#timer{
+    display: flex;
+    flex-direction:row ;
+    height: 32vh;
+    width: 40vw;
+    align-items: center;
+    justify-content: center ;
+    border-top:0px ;
+    border-left: 0px;
+    border-right: 0px;
+    border-color:   black;
+    border-radius: 1rem;
+    padding: 4vh;
+    background-color: rgba(0,0,0,0.24);
+    font-size: 10vh;
+    font-weight: 500;
+    color: black;
+}
+
+div#layeruno div#two div#control-button{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: center ;
+    padding: 4vh;
+}
+
+div#layeruno div#two div#control-button button{
+    font-size: 4vh;
+    font-family: 'Chakra Petch', sans-serif;
+    background-color:rgb(212, 126, 105);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 1rem;
+    color: black;
+
+}
+div#layeruno div#two div#control-button button:hover{
+    background-color: rgb(236, 141, 117);
+    box-shadow: 0px 2px 1px grey;
+}
+
+div#layeruno div#two .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20;
+  color: black;
+}
+
+div#layer-setting{
+    position: absolute;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.82);
+    height: 100vh;
+    width:100vw;
+}
+
+div#layer-setting div#timer-setter{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width:30vw;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vh;
+    border-radius: 2vh;
+}
+div#layer-setting div#timer-setter div#settings-cross{
+    display: flex;  
+    width: max-content;
+    justify-content:right;
+    margin-left: auto;
+    padding: 2vh;
+}
+
+div#layer-setting div#timer-setter div#setting-counter{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin: auto;
+    overflow: scroll;
+}
+div#layer-setting div#timer-setter div#setting-counter div#inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:2vh;
+}
+div#layer-setting div#timer-setter div#setting-counter div#inner div#inner-loop{
+    font-size: 2.25vh;
+    padding:2vh ;
+}
+div#layer-setting div#timer-setter div#setting-counter div#inner div#inner-loop.min-top{
+    color:rgba(0, 0, 0, 0.418);
+}
+div#layer-setting div#timer-setter div#setting-counter div#inner div#inner-loop.min-bottom{
+    color:rgba(0, 0, 0, 0.418);
+}
+div#layer-setting div#timer-setter div#setting-counter div#inner div#inner-loop.sec-top{
+    color:rgba(0, 0, 0, 0.418);
+}
+div#layer-setting div#timer-setter div#setting-counter div#inner div#inner-loop.sec-bottom{
+    color:rgba(0, 0, 0, 0.418);
+}
+div#layer-setting button#Set-time{
+    height: 5vh;
+    width: 5vw;
+    font-size: 2vh;
+    color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 172, 26);
+    border: 0px;
+    border-radius: 5px ;
+}
+div#layer-setting button#Set-time:hover{
+    background-color: rgb(65, 216, 34);
+}
+
+div#about {
+    position: absolute;
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.92);
+    height: 100vh;
+    width:100vw;
+}
+
+div#about div#about-cross{
+    display: flex;  
+    width: max-content;
+    justify-content:right;
+    margin-left: auto;
+    padding: 2vh;
+}
+
+div#about div#waving-hand img#waving-hand-image:hover{
+    animation: wave 0.5s 2 ;
+}
+@keyframes wave {
+0%{ rotate:z 0deg ;}
+50%{ rotate: z 10deg;}
+100%{ rotate: z 0deg;}    
+}
+
+
+div#about div#about-text{
+    margin: auto;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.5px;
+    overflow-x: auto;
+    padding: 2.5vh;
+}
+
+div#about div#about-links{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
